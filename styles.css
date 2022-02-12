@@ -41,11 +41,24 @@ img {
 
 /* STYLING */
 
+:root {
+  --create-account--button-color: #596d48;
+  --input-border-color: #e5e7eb;
+  --faded-white: #f9fafb;
+}
+
 html,
 body {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
 }
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Left Side */
 
 flex-container.logo-heading-container {
   margin: 0;
@@ -54,7 +67,7 @@ flex-container.logo-heading-container {
   height: 100%;
 }
 section.left {
-  width: 33%;
+  width: 33vw;
   min-height: 100vh;
   background-image: url("/Ferns.jpeg");
   background-color: green;
@@ -89,14 +102,41 @@ div.logo-heading img {
   padding: 3%;
 }
 
-footer {
+section.left footer {
   position: relative;
   bottom: 1vh;
 }
 
-footer p {
+section.left footer p {
   color: white;
 }
-footer a {
+section.left footer a {
   color: white;
+}
+
+/* Right Side*/
+
+section.right {
+  width: 67vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section.right > header {
+  width: 100%;
+  height: 35%;
+  background-color: var(--faded-white);
+}
+
+section.right > main {
+  background-color: white;
+  width: 100%;
+  height: 30%;
+}
+
+section.right > footer {
+  background-color: var(--faded-white);
+  width: 100%;
+  height: 35%;
 }

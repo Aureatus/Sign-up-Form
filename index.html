@@ -24,14 +24,47 @@
       </footer>
     </section>
     <section class="right">
-      <header></header>
+      <header>
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.<br />Sign
+          up now to get started.
+        </p>
+        <p>You <em>know </em>you want to.</p>
+      </header>
       <main>
-        <header></header>
-        <form action=""></form>
-        <footer>
-          <p><a href=""></a></p>
-        </footer>
+        <header>Let's do this!</header>
+        <form id="Signup-form">
+          <div class="input-container">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" />
+          </div>
+          <div class="input-container">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name" />
+          </div>
+          <div class="input-container">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" />
+          </div>
+          <div class="input-container">
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="tel" id="phone-number" pattern="07484715256" />
+          </div>
+          <div class="input-container">
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" />
+          </div>
+          <div class="input-container">
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input type="password" id="confirm-password" />
+          </div>
+        </form>
       </main>
+      <footer>
+        <button type="submit" form="Signup-form"></button>
+        <p>Already have an account? <a href="">Log in</a></p>
+      </footer>
     </section>
   </body>
 </html>

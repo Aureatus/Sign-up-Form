@@ -2,3 +2,101 @@
   font-family: Norse-Bold;
   src: url("/Norse-Bold.otf") format("opentype");
 }
+/* CSS RESET */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* STYLING */
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+flex-container.logo-heading-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+section.left {
+  width: 33%;
+  min-height: 100vh;
+  background-image: url("/Ferns.jpeg");
+  background-color: green;
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.logo-heading {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  min-width: 100%;
+  position: relative;
+  top: 20vh;
+}
+
+div.logo-heading h2 {
+  color: white;
+  font-family: Norse-bold, sans-serif;
+  font-size: clamp(1rem, 5vw, 20vh);
+}
+
+div.logo-heading img {
+  padding: 3%;
+}
+
+footer {
+  position: relative;
+  bottom: 1vh;
+}
+
+footer p {
+  color: white;
+}
+footer a {
+  color: white;
+}

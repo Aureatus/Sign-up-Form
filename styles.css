@@ -149,8 +149,61 @@ section.right > main {
   display: flex;
   flex-direction: column;
   padding-left: 4%;
+  padding-top: 2%;
+  row-gap: 6%;
+  box-shadow: 10px 10px 8px 8px #888888;
 }
 
+section.right > main > header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 550;
+}
+
+section.right > main > form {
+  width: 33.5vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 5%;
+  row-gap: 2vh;
+}
+
+section.right > main > form div {
+  display: flex;
+  flex-direction: column;
+  flex: 40%;
+}
+
+div input {
+  height: 3.5vh;
+  width: 14vw;
+  border-color: var(--input-border-color);
+  border-style: solid;
+  border-radius: 4px;
+}
+
+.focus {
+  border-color: blue;
+  border-width: 1px;
+  border-style: solid;
+  box-shadow: 0.5px 0.5px 4px black;
+}
+
+.error {
+  border-color: red;
+  border-width: 1px;
+  border-style: solid;
+}
+
+section.right > main > form > div label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgb(51, 50, 50);
+  font-weight: 500;
+  padding-bottom: 1%;
+}
 section.right > footer {
   background-color: var(--faded-white);
   width: 100%;
@@ -160,6 +213,7 @@ section.right > footer {
   display: flex;
   flex-direction: column;
   row-gap: 10%;
+  box-shadow: 10px 10px 8px 8px #888888;
 }
 
 section.right > footer > button {

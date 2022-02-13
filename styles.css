@@ -130,16 +130,16 @@ section.right > header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-bottom: 5%;
-  padding-left: 3%;
   gap: 8%;
 }
 
 section.right > header p {
-  width: 67vw;
+  box-sizing: border-box;
+  width: auto;
   font-family: sans-serif;
   font-size: clamp(0.5rem, 1.5vw, 3vh);
   font-weight: 600;
+  margin-left: 4%;
 }
 section.right > main {
   background-color: white;
